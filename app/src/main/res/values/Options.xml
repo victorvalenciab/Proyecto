@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Grados">
+        <item>--Selecionar--</item>
+        <item>Prescolar</item>
+        <item>Primero</item>
+        <item>Segundo</item>
+        <item>Tercero</item>
+        <item>Cuarto</item>
+        <item>Quinto</item>
+        <item>Sexto</item>
+        <item>Septimo</item>
+        <item>Octavo</item>
+        <item>Noveno</item>
+        <item>Decimo</item>
+        <item>Once</item>
+
+    </string-array>
+</resources>

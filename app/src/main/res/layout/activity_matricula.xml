@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="66dp"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background">
+
+        <Spinner
+            android:id="@+id/spListGrados"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:background="@color/background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/Grado"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDocumento" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="150dp"
+            android:text="@string/title_activity_matricula"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:text="@string/PrimerNombre"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/edtPrimerNombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/SegundoNombre"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPrimerNombre" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/SegundoApellido"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtPrimerApellido" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/InfoMatricula"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textView3" />
+
+        <EditText
+            android:id="@+id/edtPrimerNombre"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:hint="@string/PrimerNombre"
+            android:inputType="text"
+            android:textColor="@color/colorTextLeave"
+            android:textColorHint="@color/colorTextLeave"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <EditText
+            android:id="@+id/edtSegundoNombre"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:hint="@string/SegundoNombre"
+            android:inputType="text"
+            android:textColor="@color/colorTextLeave"
+            android:textColorHint="@color/colorTextLeave"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <EditText
+            android:id="@+id/edtPrimerApellido"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:hint="@string/PrimerApellido"
+            android:inputType="text"
+            android:textColor="@color/colorTextLeave"
+            android:textColorHint="@color/colorTextLeave"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <EditText
+            android:id="@+id/edtDocumento"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:hint="@string/Documento"
+            android:inputType="number"
+            android:textColor="@color/colorTextLeave"
+            android:textColorHint="@color/colorTextLeave"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/Documento"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSegundoApellido" />
+
+        <EditText
+            android:id="@+id/edtSegundoApellido"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:ems="10"
+            android:hint="@string/SegundoApellido"
+            android:inputType="text"
+            android:textColor="@color/colorTextLeave"
+            android:textColorHint="@color/colorTextLeave"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/PrimerApellido"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSegundoNombre" />
+
+        <Button
+            android:id="@+id/btnSiguiente"
+            android:layout_width="299dp"
+            android:layout_height="61dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="72dp"
+            android:backgroundTint="@color/background"
+            android:onClick="Matricular"
+            android:text="@string/title_activity_matricula"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spListGrados" />
+
+        <EditText
+            android:id="@+id/edtEdad"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="65dp"
+            android:ems="10"
+            android:hint="@string/Edad"
+            android:inputType="number"
+            android:textColorHint="@color/colorTextLeave"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtDocumento" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
